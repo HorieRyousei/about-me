@@ -1,1 +1,43 @@
 @charset "utf-8";
+@import url();
+
+
+/*共通部分
+-----------------*/
+html {
+    font-size: 100%;
+}
+body{
+    font-family:'Roboto', sans-serif;
+    line-height:1.7;
+    color:#432;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/*見出し*/
+.font-english {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+/*ヘッダー
+-------------*/
+h2 {
+    font-family:'Roboto', sans-serif;
+}
+.page-header {
+    padding-top: .5rem;
+}
+.log {
+    width: 210px;
+}
+.main-nav {
+    display: flex;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    list-style: none;
+}
