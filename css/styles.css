@@ -230,3 +230,30 @@ button:hover {
     color: black; /* 文字の色 */
     -webkit-text-stroke: 2px white; /* アウトラインの幅と色 */
 }
+/*自己紹介ーーーーーーーーーーーーーーーーーーーーーーー
+*/
+.info {
+    width: 100%;
+    max-width: 544px;
+    margin: 0 1.5rem;
+    border-spacing: 0;
+    font-family: 'Arial', sans-serif;
+}
+.info th,
+.info td {
+    border-bottom: 1px solid whitesmoke;
+}
+.info th {
+    text-align: left;
+    font-weight: normal;
+    padding: 1rem;
+}
+.info td {
+    padding: 1rem 0;
+}
+.fo {
+    font-family:  "Darumadrop One", sans-serif;
+}
+/*ゲームーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+*/
+
