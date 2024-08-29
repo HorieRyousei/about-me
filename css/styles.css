@@ -258,6 +258,60 @@ button:hover {
 .link-image img:hover {
     border-radius: 30%; 
 }
+/* 親要素 */
+.container {
+    display: flex;
+    justify-content: center; /* 横方向の中央揃え */
+    align-items: center; /* 縦方向の中央揃え */
+    height: 50vh; /* ビューポートの高さ全体を使う */
+}
+
+/* 子要素 */
+.content {
+    text-align: center; /* テキストを中央に揃える */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+.clover {
+    display: flex;
+    flex-wrap: wrap;
+    width: 420px;
+    margin: 20px auto;
+}
+.clover img {
+    width: 200px;
+   margin: 5px;
+}
+.sutoroku {
+    border-radius: 50% 50% 0 50%;
+}
+.jp{
+    border-radius: 50% 50% 50% 0;
+}
+.zangi {
+    border-radius: 50% 0 50% 50%;
+}
+.gouki {
+    border-radius: 0 50% 50% 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*メニューーーーーーーーーーーーーーーーーーーーー
 */
