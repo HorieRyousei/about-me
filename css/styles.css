@@ -6,7 +6,9 @@
 html {
     font-size: 100%;
 }
-body
+body {
+    line-height: 1.6;
+}
 a {
     text-decoration: none;
 }
@@ -29,14 +31,31 @@ img {
 .h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #333;
     font-family: "Darumadrop One",sans-serif;   
+    line-height: 10.0;
 }
 .font-english {
     font-weight: normal;
+
 }
 /*ヘッダー
 -------------*/
+.cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+    font-size: 30px;
+}
+.cover-home {
+    background-image: url(../images/haikei.jpg);
+
+}
+
+
+
+
+
+
 h2 {
     font-family: "Darumadrop One",sans-serif;
 }
@@ -54,6 +73,60 @@ h2 {
     list-style: none;
 }
 
+/*お問い合わせフォーム*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
 
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: backguround-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
 
