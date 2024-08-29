@@ -12,6 +12,9 @@
     
 </head>
 <body>
+    <header class="aiu">
+         <button class="menu-toggle" onclick="toggleMenu()">☰ メニュー</button>
+   </header>
     <div class="footer">
         &copy; 2024 Ryosei Horie.
     </div>
@@ -19,7 +22,7 @@
     <header class="page-header">
         <div class="forest-background">
             <div class="intro-box">
-                <h1>ようこそ！</h1>
+                <h1 style="font-size: 8rem;text-align: center;">ようこそ！</h1>
                 <h2>ほりえ　りょうせいです。</h2>
                 <h2>ゆる〜くみていってね</h2>
                 <nav>
@@ -37,9 +40,19 @@
 
         
     </header>
-		
+	<nav id="slide-menu" class="slide-menu">
+         <button class="close-btn" onclick="toggleMenu()">×</button>
+        <ul>
+             <li><a href="index.html">トップ</a></li>
+             <li><a href="about.html">あばうとみー</a></li>
+             <li><a href="otoiawase.html">おといあわせ</a></li>
+             <li><a href="ge-mu.html">げーむ</a></li>
+             <li><a href="suitu.html">たべもの</a></li>
+        </ul>
+    </nav>
 
-    <script src="js/scripts.js"></script>
+
+     <script src="js/scripts.js"></script>
 </body>
 </div>
 </html>                                      

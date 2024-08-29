@@ -86,15 +86,7 @@ h2 {
     padding: 30px 0;
     font-size: 2.0rem;
 }
-/*画像を丸くさせる*/
-.link-image img {
-    width: 300px; 
-    height: auto; 
-    transition: border-radius 0.3s ease; 
-}
-.link-image img:hover {
-    border-radius: 100%; 
-}
+
 
 
 
@@ -257,3 +249,91 @@ button:hover {
 /*ゲームーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 */
 
+/*画像を丸くさせる*/
+.link-image img {
+    width: 300px; 
+    height: auto; 
+    transition: border-radius 0.3s ease; 
+}
+.link-image img:hover {
+    border-radius: 30%; 
+}
+
+/*メニューーーーーーーーーーーーーーーーーーーーー
+*/
+/* 基本スタイル */
+body {
+    font-family: "Darumadrop One", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* メニューが出たときに横スクロールを防ぐ */
+}
+
+.aiu {
+    background-color: #333;
+    padding: 15px;
+    color: #fff;
+    text-align: left;
+}
+
+.menu-toggle {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+}
+
+
+/* スライドメニューのスタイル */
+.slide-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.slide-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.slide-menu ul li {
+    padding: 10px 20px;
+}
+
+.slide-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    display: block;
+}
+
+.slide-menu ul li a:hover {
+    background-color: #575757;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* スライドメニューが表示されたとき */
+.slide-menu.active {
+    width: 250px;
+}
