@@ -3,11 +3,17 @@
 
 /*共通部分
 -----------------*/
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 html {
     font-size: 100%;
 }
 body {
     line-height: 1.6;
+    font-family: "Darumadrop One", sans-serif;
 }
 a {
     text-decoration: none;
@@ -15,6 +21,10 @@ a {
 img {
     max-width: 100%;
 }
+.images{
+    max-width: 100%;
+}
+
 
 .darumadrop-one-regular {
     font-family: "Darumadrop One", sans-serif;
@@ -23,37 +33,20 @@ img {
   }
   
 /*レイアウト*/
-.align-center {
-    text-align: center;
-}
+
 /*見出し*/
 
-.h1 {
-    font-size: 2.5rem;
+h1 {
+    font-size: 50.0px;
     font-weight: bold;
-    font-family: "Darumadrop One",sans-serif;   
-    line-height: 10.0;
+    margin: 0;
+    padding: 0;
 }
+
 .font-english {
     font-weight: normal;
 
 }
-/*ヘッダー
--------------*/
-.cover {
-    background-size: cover;
-    background-position: center bottom;
-    height: 800px;
-    font-size: 30px;
-}
-.cover-home {
-    background-image: url(../images/haikei.jpg);
-
-}
-
-
-
-
 
 
 h2 {
@@ -69,10 +62,170 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 2.5rem;
-    font-size: 1.5rem;
+    font-size: 3.0rem;
     list-style: none;
 }
 
 
 
+/*フッターーーーー*/
+.footer {
+    margin: 0;
+    padding: 0;
+    font-family: "Darumadrop One", sans-serif;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 2.0rem;
+}
+/*画像を丸くさせる*/
+.link-image img {
+    width: 300px; 
+    height: auto; 
+    transition: border-radius 0.3s ease; 
+}
+.link-image img:hover {
+    border-radius: 100%; 
+}
 
+
+
+
+/*森背景*/
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family:  "Darumadrop One", sans-serif;
+    color: wheat;
+}
+
+.forest-background {
+    background-image: url('/images/haikei.jpg'); /* 森の画像を設定 */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* 背景を固定 */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-box {
+    background-color: rgba(0, 0, 0, 0.5); /* 背景を半透明に */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 7rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+/*リンクの文字の色*/
+a {
+    color: wheat; /* 任意の色を指定（この場合は黒） */
+    text-decoration: none; /* 下線を消したい場合 */
+}
+
+/* リンクにホバーしたときの色を設定 */
+a:hover {
+    color: wheat; /* ホバー時も同じ色を維持 */
+}
+
+/* リンクをクリックした後（訪問後）の色を設定 */
+a:visited {
+    color: wheat; /* 訪問後も同じ色を維持 */
+}
+
+/* アクティブ状態のリンク（クリック中）の色を設定 */
+a:active {
+    color: black; /* アクティブ時も同じ色を維持 */
+}
+
+
+
+/*お問い合わせフォームーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+*/
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.signboard {
+    background-image: url('/images/ki.jpg'); /* 木のテクスチャ */
+    background-size: cover;
+    padding: 20px;
+    border: 10px solid #8B4513; /* ブラウン色の枠 */
+    display: inline-block;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.contact-form {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+    width: 300px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #8B4513;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family:  "Darumadrop One", sans-serif;
+    background-color: #F5DEB3; /* ベージュ色の背景 */
+}
+
+button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family:  "Darumadrop One", sans-serif;
+}
+
+button:hover {
+    background-color: #A0522D;
+}
+
+
+/*文字の大きさ*/
+.align-centerr {
+    font-size: 5rem;
+    text-align: center;
+    color: black; /* 文字の色 */
+    -webkit-text-stroke: 2px white; /* アウトラインの幅と色 */
+}
