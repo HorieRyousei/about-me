@@ -101,7 +101,7 @@ body, html {
 }
 
 .forest-background {
-    background-image: url('/images/haikei.jpg'); /* 森の画像を設定 */
+    background-image: url('../images/haikei.jpg'); /* 森の画像を設定 */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* 背景を固定 */
@@ -156,7 +156,7 @@ a:active {
 お問い合わせフォームーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 */
 .otoi {
-    background-image: url('/images/haikei.jpg'); /* 画像のパス */
+    background-image: url('../images/haikei.jpg'); /* 画像のパス */
     background-size: cover; /* 画面全体に画像をフィットさせる */
     background-position: center; /* 画像を中央に配置 */
     background-repeat: no-repeat; 
@@ -180,7 +180,7 @@ a:active {
 }
 
 .signboard {
-    background-image: url('/images/ki.jpg'); /* 木のテクスチャ */
+    background-image: url('../images/ki.jpg'); /* 木のテクスチャ */
     background-size: cover;
     padding: 20px;
     border: 10px solid #8B4513; /* ブラウン色の枠 */
