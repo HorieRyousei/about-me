@@ -76,7 +76,7 @@ h2 {
     font-family: "Darumadrop One", sans-serif;
 }
 .footer {
-    position: fixed;
+    position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -251,7 +251,7 @@ button:hover {
 
 /*画像を丸くさせる*/
 .link-image img {
-    width: 300px; 
+    width: 500px; 
     height: auto; 
     transition: border-radius 0.3s ease; 
 }
@@ -292,7 +292,7 @@ button:hover {
 .sutoroku {
     border-radius: 50% 50% 0 50%;
 }
-.jp{
+.jp {
     border-radius: 50% 50% 50% 0;
 }
 .zangi {
