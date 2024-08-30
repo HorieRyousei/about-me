@@ -101,7 +101,7 @@ body, html {
 }
 
 .forest-background {
-    background-image: url('../images/haikei.jpg'); /* 森の画像を設定 */
+    background-image: url('./../images/haikei.jpg'); /* 森の画像を設定 */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* 背景を固定 */
