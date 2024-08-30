@@ -414,5 +414,46 @@ body {
 .slide-menu.active {
     width: 250px;
 }
-/*ロードーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+/*食べ物ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 */
+
+.container {
+    background-color: #F5DEB3;
+    position: relative;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image {
+    padding: 50px;
+    width: 500px;
+    position: absolute;
+    left: -300px; /* 初期位置は画面の外 */
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+}
+
+.text {
+    padding: 50px;
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    right: -100%;
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+}
+
+/* アニメーションがトリガーされるクラス */
+.animate .image {
+    left: 0;
+    opacity: 1;
+}
+
+.animate .text {
+    right: 0;
+    opacity: 1;
+}
