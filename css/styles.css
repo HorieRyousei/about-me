@@ -76,7 +76,7 @@ h2 {
     font-family: "Darumadrop One", sans-serif;
 }
 .footer {
-    position: sticky;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -152,8 +152,28 @@ a:active {
 
 
 
-/*お問い合わせフォームーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+/*
+お問い合わせフォームーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 */
+.otoi {
+    background-image: url('/images/haikei.jpg'); /* 画像のパス */
+    background-size: cover; /* 画面全体に画像をフィットさせる */
+    background-position: center; /* 画像を中央に配置 */
+    background-repeat: no-repeat; 
+}
+
+.contact {
+    width: 100vw;
+}
+
+.contact-bg {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
 .title {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -287,7 +307,8 @@ button:hover {
 }
 .clover img {
     width: 200px;
-   margin: 5px;
+    height: 200px;
+    margin: 5px;
 }
 .sutoroku {
     border-radius: 50% 50% 0 50%;
