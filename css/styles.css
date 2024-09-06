@@ -417,7 +417,7 @@ body {
 /*食べ物ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 */
 
-.container {
+.con {
     background-color: #F5DEB3;
     position: relative;
     width: 80%;
@@ -428,7 +428,7 @@ body {
     overflow: hidden;
 }
 
-.image {
+.imagee {
     padding: 50px;
     width: 500px;
     position: absolute;
@@ -437,7 +437,7 @@ body {
     transition: all 1.5s ease-in-out;
 }
 
-.text {
+.ttt {
     padding: 50px;
     color: #000;
     font-size: 24px;
@@ -448,12 +448,12 @@ body {
 }
 
 /* アニメーションがトリガーされるクラス */
-.animate .image {
+.animate .imagee {
     left: 0;
     opacity: 1;
 }
 
-.animate .text {
+.animate .ttt {
     right: 0;
     opacity: 1;
 }
