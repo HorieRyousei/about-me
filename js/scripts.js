@@ -10,14 +10,14 @@ function toggleMenu() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const container = document.querySelector('.container');
+    const con = document.querySelector('.con');
 
     // Intersection Observer を設定
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                container.classList.add('animate');
-                observer.unobserve(container); // アニメーションが再生されたら監視を停止
+                con.classList.add('animate');
+                observer.unobserve(con); // アニメーションが再生されたら監視を停止
             }
         });
     }, {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // コンテナ要素を監視
-    observer.observe(container);
+    observer.observe(con);
 });
 
 
