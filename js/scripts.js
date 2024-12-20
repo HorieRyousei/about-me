@@ -7,25 +7,22 @@ function toggleMenu() {
      menu.classList.toggle("active");
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll('.section');
 
+    const handleScroll = () => {
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
 
-document.addEventListener('DOMContentLoaded', function() {
-    const con = document.querySelector('.con');
-
-    // Intersection Observer を設定
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                con.classList.add('animate');
-                observer.unobserve(con); // アニメーションが再生されたら監視を停止
+            if (isVisible) {
+                section.classList.add('show');
+            } else {
+                section.classList.remove('show');
             }
         });
-    }, {
-        threshold: 0.5 // 50% が画面に入ったときにアニメーションを開始
-    });
+    };
 
-    // コンテナ要素を監視
-    observer.observe(con);
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // 初回ロード時のチェック
 });
-
-

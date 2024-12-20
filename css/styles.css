@@ -1,6 +1,5 @@
 @charset "utf-8";
  
-
 /*共通部分
 -----------------*/
 body, html {
@@ -12,8 +11,8 @@ html {
     font-size: 100%;
 }
 body {
-    line-height: 1.6;
-    font-family: "Darumadrop One", sans-serif;
+    
+    font-family: 'Roboto';
 }
 a {
     text-decoration: none;
@@ -25,435 +24,47 @@ img {
     max-width: 100%;
 }
 
-
-.darumadrop-one-regular {
-    font-family: "Darumadrop One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-/*レイアウト*/
-
-/*見出し*/
-
-h1 {
-    font-size: 50.0px;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+.section {
+    opacity: 0;
+    transform: translateX(100px); /* 右にスライドする効果 */
+    transition: all 1.5s ease-in-out;
+    margin: 50px 0; /* セクションの間隔 */
 }
 
-.font-english {
-    font-weight: normal;
-
+.section.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
-
-h2 {
-    font-size: 30.0px;
-    font-family: "Darumadrop One",sans-serif;
-}
-.page-header {
-    padding-top: .5rem;
-}
-.log {
-    width: 210px;
-}
-.main-nav {
+.content {
     display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    font-size: 3.0rem;
-    list-style: none;
-}
-
-
-
-/*フッターーーーー*/
-.footer {
-    margin: 0;
-    padding: 0;
-    font-family: "Darumadrop One", sans-serif;
-}
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 30px 0;
-    font-size: 2.0rem;
-}
-
-
-
-
-
-/*森背景*/
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family:  "Darumadrop One", sans-serif;
-    color: wheat;
-}
-
-.forest-background {
-    background-image: url('./../images/haikei.jpg'); /* 森の画像を設定 */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* 背景を固定 */
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 20px; /* 写真とテキストの間隔 */
 }
 
-.intro-box {
-    background-color: rgba(0, 0, 0, 0.5); /* 背景を半透明に */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+.content img {
+    width: 40%; /* 画像の幅を調整 */
+    height: auto;
+    border-radius: 8px; /* 角を丸くする場合 */
 }
 
-h1 {
-    font-size: 7rem;
-    margin-bottom: 20px;
+.content .text {
+    flex: 1; /* 残りのスペースをテキストに割り当てる */
 }
 
-p {
+.content .text h2 {
     font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.content .text p {
+    font-size: 1em;
     line-height: 1.5;
 }
 
-/*リンクの文字の色*/
-a {
-    color: wheat; /* 任意の色を指定（この場合は黒） */
-    text-decoration: none; /* 下線を消したい場合 */
-}
-
-/* リンクにホバーしたときの色を設定 */
-a:hover {
-    color: wheat; /* ホバー時も同じ色を維持 */
-}
-
-/* リンクをクリックした後（訪問後）の色を設定 */
-a:visited {
-    color: wheat; /* 訪問後も同じ色を維持 */
-}
-
-/* アクティブ状態のリンク（クリック中）の色を設定 */
-a:active {
-    color: black; /* アクティブ時も同じ色を維持 */
-}
 
 
-
-/*
-お問い合わせフォームーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-*/
-.otoi {
-    background-image: url('../images/haikei.jpg'); /* 画像のパス */
-    background-size: cover; /* 画面全体に画像をフィットさせる */
-    background-position: center; /* 画像を中央に配置 */
-    background-repeat: no-repeat; 
-}
-
-.contact {
-    width: 100vw;
-}
-
-.contact-bg {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-}
-
-.title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.signboard {
-    background-image: url('../images/ki.jpg'); /* 木のテクスチャ */
-    background-size: cover;
-    padding: 20px;
-    border: 10px solid #8B4513; /* ブラウン色の枠 */
-    display: inline-block;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-}
-
-.contact-form {
-    font-size: 1rem;
-    color: #333;
-    text-align: left;
-    width: 300px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #8B4513;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-family:  "Darumadrop One", sans-serif;
-    background-color: #F5DEB3; /* ベージュ色の背景 */
-}
-
-button {
-    width: 100%;
-    padding: 10px 20px;
-    background-color: #8B4513;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family:  "Darumadrop One", sans-serif;
-}
-
-button:hover {
-    background-color: #A0522D;
-}
-
-
-/*文字の大きさ*/
-.align-centerr {
-    font-size: 5rem;
-    text-align: center;
-    color: black; /* 文字の色 */
-    -webkit-text-stroke: 2px white; /* アウトラインの幅と色 */
-}
-/*自己紹介ーーーーーーーーーーーーーーーーーーーーーーー
-*/
-.info {
-    width: 100%;
-    max-width: 544px;
-    margin: 0 1.5rem;
-    border-spacing: 0;
-    font-family: 'Arial', sans-serif;
-}
-.info th,
-.info td {
-    border-bottom: 1px solid whitesmoke;
-}
-.info th {
-    text-align: left;
-    font-weight: normal;
-    padding: 1rem;
-}
-.info td {
-    padding: 1rem 0;
-}
-.fo {
-    font-family:  "Darumadrop One", sans-serif;
-}
-/*ゲームーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-*/
-
-/*画像を丸くさせる*/
-.eo {
-    background-color: #F5DEB3;
-}
-.link-image img {
-    width: 500px; 
-    height: auto; 
-    transition: border-radius 0.3s ease; 
-}
-.link-image img:hover {
-    border-radius: 30%; 
-}
-/* 親要素 */
+/*-両端の空白-*/
 .container {
-    display: flex;
-    justify-content: center; /* 横方向の中央揃え */
-    align-items: center; /* 縦方向の中央揃え */
-    height: 50vh; /* ビューポートの高さ全体を使う */
-}
-
-/* 子要素 */
-.content {
-    text-align: center; /* テキストを中央に揃える */
-    padding: 20px;
-    border-radius: 10px;
-}
-
-
-
-
-
-
-.clover {
-    display: flex;
-    flex-wrap: wrap;
-    width: 420px;
-    margin: 20px auto;
-}
-.clover img {
-    width: 200px;
-    height: 200px;
-    margin: 5px;
-}
-.sutoroku {
-    border-radius: 50% 50% 0 50%;
-}
-.jp {
-    border-radius: 50% 50% 50% 0;
-}
-.zangi {
-    border-radius: 50% 0 50% 50%;
-}
-.gouki {
-    border-radius: 0 50% 50% 50%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*メニューーーーーーーーーーーーーーーーーーーーー
-*/
-/* 基本スタイル */
-body {
-    font-family: "Darumadrop One", sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* メニューが出たときに横スクロールを防ぐ */
-}
-
-.aiu {
-    background-color: #333;
-    padding: 15px;
-    color: #fff;
-    text-align: left;
-}
-
-.menu-toggle {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.content {
-    padding: 20px;
-}
-
-
-/* スライドメニューのスタイル */
-.slide-menu {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #333;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.slide-menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.slide-menu ul li {
-    padding: 10px 20px;
-}
-
-.slide-menu ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    display: block;
-}
-
-.slide-menu ul li a:hover {
-    background-color: #575757;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 2rem;
-    background: none;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-/* スライドメニューが表示されたとき */
-.slide-menu.active {
-    width: 250px;
-}
-/*食べ物ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-*/
-
-.con {
-    background-color: #F5DEB3;
-    position: relative;
-    width: 80%;
-    height: 400px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-}
-
-.imagee {
-    padding: 50px;
-    width: 500px;
-    position: absolute;
-    left: -300px; /* 初期位置は画面の外 */
-    opacity: 0;
-    transition: all 1.5s ease-in-out;
-}
-
-.ttt {
-    padding: 50px;
-    color: #000;
-    font-size: 24px;
-    position: absolute;
-    right: -100%;
-    opacity: 0;
-    transition: all 1.5s ease-in-out;
-}
-
-/* アニメーションがトリガーされるクラス */
-.animate .imagee {
-    left: 0;
-    opacity: 1;
-}
-
-.animate .ttt {
-    right: 0;
-    opacity: 1;
+    padding: 0 20px; /* 左右に20pxの空白を追加 */
 }
