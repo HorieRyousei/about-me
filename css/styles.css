@@ -82,9 +82,7 @@ img {
     height: 100vh; /* ビューポート全高 */
     margin: 0; /* 余白を削除 */
     padding: 0; /* パディングを削除 */
-    background-image: 
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), /* 上部に白のグラデーション */
-        url('/images/IMG_6181.JPG'); /* 背景画像のパス */
+    background-image: url("/images/IMG_6181.JPG"); /* 背景画像のパス */
     background-size: cover; /* 画像を縦横比を維持しつつ全体をカバー */
     background-position: center; /* 画像を中央に配置 */
     background-repeat: no-repeat; /* 繰り返しを防止 */
@@ -94,22 +92,6 @@ img {
     align-items: center; /* 水平方向に中央揃え */
 }
 
-/* 四角で囲むスタイル */
-.rounded-box {
-    border-radius: 15px; /* 角を丸く */
-    padding: 20px; /* 内側の余白 */
-    display: inline-block; /* コンテンツに合わせた幅 */
-    background-color: #f9f9f9; /* 背景色 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影 */
-}
-
-/* タイトルのスタイル */
-.title {
-    font-size: 2rem; /* フォントサイズ */
-    color: #333; /* テキストの色 */
-    margin: 0; /* 上下の余白を消す */
-    text-align: center; /* 中央揃え */
-}
 
 
 
