@@ -75,11 +75,16 @@ img {
     padding: 0 40px; /* 左右に20pxの空白を追加 */
 }
 
+/*-ヘッダーの写真-*/
 .hero {
     position: relative;
-    width: 100%;
-    height: 100vh; /* 画面全体をカバー */
-    background-image: url('images/db6cda32-e5eb-47fc-933b-e7c54f1eaebc.jpg'); /* 背景画像のパス */
+    width: 100vw; /* ビューポート全幅 */
+    height: 100vh; /* ビューポート全高 */
+    margin: 0; /* 余白を削除 */
+    padding: 0; /* パディングを削除 */
+    background-image: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), /* 上部に白のグラデーション */
+        url('/images/IMG_6181.JPG'); /* 背景画像のパス */
     background-size: cover; /* 画像を縦横比を維持しつつ全体をカバー */
     background-position: center; /* 画像を中央に配置 */
     background-repeat: no-repeat; /* 繰り返しを防止 */
@@ -87,9 +92,25 @@ img {
     flex-direction: column;
     justify-content: center; /* 垂直方向に中央揃え */
     align-items: center; /* 水平方向に中央揃え */
-    color: white; /* テキスト色を白に設定 */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* テキストに影をつける */
 }
+
+/* 四角で囲むスタイル */
+.rounded-box {
+    border-radius: 15px; /* 角を丸く */
+    padding: 20px; /* 内側の余白 */
+    display: inline-block; /* コンテンツに合わせた幅 */
+    background-color: #f9f9f9; /* 背景色 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影 */
+}
+
+/* タイトルのスタイル */
+.title {
+    font-size: 2rem; /* フォントサイズ */
+    color: #333; /* テキストの色 */
+    margin: 0; /* 上下の余白を消す */
+    text-align: center; /* 中央揃え */
+}
+
 
 
 /*-写真配置-*/
@@ -116,4 +137,50 @@ img {
     aspect-ratio: 1 / 1; /* 正方形の写真を維持 */
     object-fit: cover; /* 画像が収まるようにトリミング */
     border-radius: 10px; /* 各画像を丸くする */
+}
+
+
+/* 全体のスタイル */
+.nav-list {
+    text-align: center; /* テキストを中央揃え */
+    margin: 0;
+    padding: 0;
+}
+
+/* タイトルのスタイル */
+.main-title {
+    font-size: 4rem;
+    color: #4a4a4a; /* タイトルカラー */
+    margin: 0;
+}
+
+.sub-title {
+    font-size: 2rem;
+    color: #666; /* サブタイトルカラー */
+    margin: 0.5rem 0;
+}
+
+/* ナビゲーションのスタイル */
+.nav-menu {
+    list-style: none; /* 点を消す */
+    padding: 0;
+    margin: 2rem 0 0;
+    display: flex;
+    justify-content: center; /* 水平方向に中央揃え */
+    gap: 2rem; /* メニュー間のスペース */
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-menu a {
+    text-decoration: none; /* 下線を消す */
+    font-size: 1.5rem;
+    color: #007BFF; /* リンクの色 */
+    transition: color 0.3s ease; /* カラーの変化をスムーズに */
+}
+
+.nav-menu a:hover {
+    color: #0056b3; /* ホバー時のリンクカラー */
 }
