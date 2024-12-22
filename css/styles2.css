@@ -1,0 +1,157 @@
+@charset "utf-8";
+ 
+/*共通部分
+-----------------*/
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+html {
+    font-size: 100%;
+}
+body {
+    
+    font-family: 'Roboto';
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.images{
+    max-width: 100%;
+}
+
+.section {
+    opacity: 0;
+    transform: translateX(100px); /* 右にスライドする効果 */
+    transition: all 1.5s ease-in-out;
+    margin: 50px 0; /* セクションの間隔 */
+}
+
+.section.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* 写真とテキストの間隔 */
+
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+
+}
+
+.content img {
+    width: 40%; /* 画像の幅を調整 */
+    height: auto;
+    border-radius: 8px; /* 角を丸くする場合 */
+}
+
+.content .text {
+    flex: 1; /* 残りのスペースをテキストに割り当てる */
+}
+
+.content .text h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.content .text p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+
+
+/* 全体のスタイル */
+.nav-list {
+    text-align: center; /* テキストを中央揃え */
+    margin: 0;
+    padding: 0;
+}
+
+/* タイトルのスタイル */
+.main-title {
+    font-size: 4rem;
+    color: #4a4a4a; /* タイトルカラー */
+    margin: 0;
+}
+
+.sub-title {
+    font-size: 2rem;
+    color: #666; /* サブタイトルカラー */
+    margin: 0.5rem 0;
+}
+
+/* ナビゲーションのスタイル */
+.nav-menu {
+    list-style: none; /* 点を消す */
+    padding: 0;
+    margin: 2rem 0 0;
+    display: flex;
+    justify-content: center; /* 水平方向に中央揃え */
+    gap: 2rem; /* メニュー間のスペース */
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-menu a {
+    text-decoration: none; /* 下線を消す */
+    font-size: 1.5rem;
+    color: #007BFF; /* リンクの色 */
+    transition: color 0.3s ease; /* カラーの変化をスムーズに */
+}
+
+.nav-menu a:hover {
+    color: #0056b3; /* ホバー時のリンクカラー */
+}
+
+
+/*-両端の空白-*/
+.container {
+    padding: 0 40px; /* 左右に20pxの空白を追加 */
+}
+
+/*-ヘッダーの写真-*/
+.hero {
+    position: relative;
+    width: 100vw; /* ビューポート全幅 */
+    height: 100vh; /* ビューポート全高 */
+    margin: 0; /* 余白を削除 */
+    padding: 0; /* パディングを削除 */
+    background-image: url('../images/IMG_6171.JPG'); /* 背景画像のパス */
+    background-size: cover; /* 画像を縦横比を維持しつつ全体をカバー */
+    background-position: center; /* 画像を中央に配置 */
+    background-repeat: no-repeat; /* 繰り返しを防止 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直方向に中央揃え */
+    align-items: center; /* 水平方向に中央揃え */
+}
+/* 四角で囲むスタイル */
+.rounded-box {
+    border: 2px solid #007BFF; /* 枠線の色 */
+    border-radius: 15px; /* 角を丸く */
+    padding: 20px; /* 内側の余白 */
+    display: inline-block; /* コンテンツに合わせた幅 */
+    background-color: #f9f9f9; /* 背景色 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影 */
+}
+
+/* タイトルのスタイル */
+.title {
+    font-size: 2rem; /* フォントサイズ */
+    color: #333; /* テキストの色 */
+    margin: 0; /* 上下の余白を消す */
+    text-align: center; /* 中央揃え */
+}
+

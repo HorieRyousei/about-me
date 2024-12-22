@@ -6,7 +6,6 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: #f8e9e9;
 }
 html {
     font-size: 100%;
@@ -82,7 +81,7 @@ img {
     height: 100vh; /* ビューポート全高 */
     margin: 0; /* 余白を削除 */
     padding: 0; /* パディングを削除 */
-    background-image: url("/images/IMG_6181.JPG"); /* 背景画像のパス */
+    background-image: url("../images/IMG_6181.JPG"); /* 背景画像のパス */
     background-size: cover; /* 画像を縦横比を維持しつつ全体をカバー */
     background-position: center; /* 画像を中央に配置 */
     background-repeat: no-repeat; /* 繰り返しを防止 */
